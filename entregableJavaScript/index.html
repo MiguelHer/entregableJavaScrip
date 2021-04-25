@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diseño web, Desarrollo web">
+    <meta name="keywords" content="Diseño web, Desarrollo web">
+    <meta name="autor" content="Miguel Hernández">
+    <link rel="icon" href="img/Gorra_-_M.ico">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stilos.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <main>
+        <div class="container-all" id="modal1">
+            <div class="popUp">
+                <div class="form-home">
+                    <form action="https://formspree.io/f/mqkwaerb" method="POST" target="_blank"
+                        rel="noopener noreferrer" class="formulario" id="formulario">
+                        <!-- Grupo: Número de Identificación -->
+                            <div class="formulario__grupo" id="grupo__id">
+                                <label for="id" class="formulario__label">Número de Identificación <span>*</span></label>
+                                <div class="formulario__grupo-input">
+                                    <input class="formulario__input" type="text" id="id" name="id"  placeholder="Ingresa tu Nº de Identificación" title="Ingresa solo numeros" >
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">El Número de Identificación tiene que ser de 6 a 9 dígitos y solo puede contener numeros.</p>
+                            </div>
+                        <!-- Grupo: Celular -->
+                            <div class="formulario__grupo" id="grupo__phone">
+                                <label for="phone" class="formulario__label">Celular <span>*</span></label>
+                                <div class="formulario__grupo-input">
+                                    <input class="formulario__input" type="tel" id="phone" name="phone" placeholder="Ingresa tu Nº de Celular" title="Ingresa tu numero sin el prefijo" >
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 10 dígitos.</p>
+                            </div>
+                        <!-- Grupo: Área/operación -->
+                            <div class="formulario__grupo" id="grupo__area">
+                                <label for="area" class="formulario__label">Área/operación <span>*</span></label>
+                                <div class="formulario__grupo-input">
+                                    <select class="formulario__input" id="area" name="area" style="appearance: none;">
+                                        <option value="">seleccionar un Área de operación.</option>
+                                        <option value="1">Área 1</option>
+                                        <option value="2">Área 2</option>
+                                        <option value="3">Área 3</option>
+                                        <option value="4">Área 4</option>
+                                    </select>
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">Debe seleccionar un Área de operación.</p>
+                            </div>
+                        <!-- Grupo: contactoTelefonico -->
+                            <div class="formulario__grupo" id="grupo__ubicacion">
+                                <label for="contactoTelefonico" class="formulario__label">Indicanos donde te encuentras ubicado <span>*</span></label>
+                                <div class="formulario__grupo-input">
+                                    <select class="formulario__input" id="ubicacion" name="ubicacion" style="appearance: none;" >
+                                        <option value="">Indicanos donde te encuentras ubicado</option>
+                                        <option value="lugar1">Lugar 1</option>
+                                        <option value="lugar2">Lugar 2</option>
+                                        <option value="lugar3">Lugar 3</option>
+                                        <option value="lugar4">Lugar 4</option>
+                                    </select>
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">Debe seleccionar el lugar donde Reside.</p>
+                            </div>
+                        <!-- Grupo: Nombres y Apellidos -->
+                            <div class="formulario__grupo" id="grupo__nombre">
+                                <label for="name" class="formulario__label">Nombres y Apellidos <span>*</span></label>
+                                <div class="formulario__grupo-input">
+                                    <input class="formulario__input" type="text" id="nombre" name="nombre" placeholder="Ingresa tu Nombre" >
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">debe ingresar al menos un Nombre y un Apellido.</p>
+                            </div>
+                        <!-- Grupo: Email -->
+                            <div class="formulario__grupo" id="grupo__correo">
+                                <label for="email" class="formulario__label">Email <span>*</span></label>
+                                <div class="formulario__grupo-input">
+                                    <input class="formulario__input" type="email" id="email" name="email" placeholder="Ingresa tu Email" >
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                            </div>
+                        <!-- Grupo: Cargo -->
+                            <div class="formulario__grupo" id="grupo__cargo">
+                                <label for="cargo" class="formulario__label">Cargo <span>*</span></label>
+                                <div class="formulario__grupo-input">
+                                    <input class="formulario__input" type="text" id="cargo" name="cargo" placeholder="Cargo" >
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">Seleccione el cargo que ocupa actualmente</p>
+                            </div>
+                        <!-- Grupo: horario -->
+                            <div class="formulario__grupo" id="grupo__horario">
+                                <label for="horario" class="formulario__label">Horario en el que podemos contactar <span>*</span>
+                                <div class="formulario__grupo-input">
+                                    <input class="formulario__input" id="horario" type="time" name="horario" min="7:00" max="18:00" >
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">Indique en que Horario podemos contactarlo.</p>
+                            </div>
+                        <!-- mensaje Error -->
+                            <div class="formulario__mensaje" id="formulario__mensaje">
+                                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                            </div>
+                        <!-- btn-enviar -->
+                            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                                <input type="submit" value="Enviar" class="formulario__btn">
+                                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                            </div>
+                    </form>
+                </div>
+                <a href="#post1" class="btn-close-popUp" id="close">x</a>
+            </div>
+        </div>
+        <div class="container-all" id="modal2">
+            <div class="popUp">
+
+                <div class="form-calculator">
+                    <div class="content">
+                        <h2>Escoja una operación</h2>
+                          <div class="content-form" id="MiForm">
+                                <div class="item1">
+                                    <input type="radio" name="operation" id="plus" value="suma" >
+                                    <label for="plus"><i class="fas fa-plus"></i></label>
+                                </div>
+                                <div class="item2">
+                                    <input type="radio" name="operation" id="minus" value="resta" >
+                                    <label for="minus"><i class="fas fa-minus"></i></label>
+                                </div>
+                                <div class="item3">
+                                    <input type="radio" name="operation" id="multiplication" value="multiplicacion" >
+                                    <label for="multiplication"><i class="fas fa-times"></i></label>
+                                </div>
+                                <div class="item4">
+                                    <input type="radio" name="operation" id="division" value="división" >
+                                    <label for="division"><i class="fas fa-divide"></i></label>
+                                </div>
+                                <div class=" item5">
+                                    <input type="number" placeholder="1º Número" id="valor1" name="num1">
+                                </div>
+                                <div class=" item6">
+                                    <i id="signo" class="vacio"></i>
+                                </div>
+                                <div class=" item7">
+                                    <input type="number" placeholder="2º Número" id="valor2" name="num2">
+                                </div>
+                                <div class=" item8">
+                                    <i class="fas fa-equals"></i>
+                                </div>
+                                <div class=" item9">
+                                    <label id="result-cal"></label>
+                                    <output id="r"></output> 
+                                </div>
+                                <div class=" item10">
+                                     <input type="submit" name="btn-start" id="btn-start" value="Start" ><!--onclick="start();" -->   
+                                  </div>
+                                 <div class="item11">
+                                    <input type="button" name="btn-reset" value="Reset" id="btn-reset" ><!--onclick="limpiar();" -->
+                                </div>
+                        </div>  
+                    </div>
+                </div>
+                <a href="#post2" class="btn-close-popUp" onclick="limpiar()">x</a>
+            </div>
+        </div>
+        <div class="container-home" >
+            <a href="#modal1" class="btn-open-popUp" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+
+                <i class="fas fa-home"></i>
+                <div class="home"> </div>
+            </a>
+            <a href="#modal2" class="btn-open-popUp" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+
+                <i class="fas fa-calculator"></i>
+                <div class="calculator"> </div>
+            </a>
+        </div>
+
+        <div class="firma"><img src="https://fontmeme.com/permalink/210420/6a70454c4a549711d9c02c226b7ef633.png" alt="fuentes-para-firmas" border="0" >&copy;</div>
+    </main>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
